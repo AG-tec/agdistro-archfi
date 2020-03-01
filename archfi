@@ -12,7 +12,7 @@
 # referance : https://wiki.archlinux.org/index.php/Installation_guide
 
 
-apptitle="LI-XA Linux Fast Install (lxfi) - Version: 2020.01.11.03.53.30 (GPLv3)"
+apptitle="LX Linux Instalation (lx-ins) - Version: 1-03-2020 00:28"
 baseurl=https://raw.githubusercontent.com/MatMoul/archfi/master
 skipfont="0"
 
@@ -781,10 +781,7 @@ installbase(){
   clear
   pkgs="base"
   options=()
-  options+=("linux" "")
-  options+=("linux-lts" "")
   options+=("linux-zen" "")
-  options+=("linux-hardened" "")
   sel=$(whiptail --backtitle "${apptitle}" --title "Kernel" --menu "" 0 0 0 \
     "${options[@]}" \
     3>&1 1>&2 2>&3)
